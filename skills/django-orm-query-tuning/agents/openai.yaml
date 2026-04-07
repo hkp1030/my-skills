@@ -1,0 +1,4 @@
+interface:
+  display_name: "Django ORM Tuning"
+  short_description: "Optimize Django ORM queries with EXPLAIN"
+  default_prompt: "Use $django-orm-query-tuning to optimize a Django ORM queryset with EXPLAIN, shell validation, and minimal schema changes."
