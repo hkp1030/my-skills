@@ -2,6 +2,3 @@ interface:
   display_name: "Readable Code Style"
   short_description: "코드 가독성과 단순화를 우선하는 작성 원칙"
   default_prompt: "Use $readable-code-style to simplify this code and make it easier to read at a glance."
-
-policy:
-  allow_implicit_invocation: false
