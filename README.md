@@ -22,6 +22,15 @@ Django ORM `QuerySet`의 성능을 개선하되 결과 동일성을 유지해야
 - 직접적이고 읽기 쉬운 흐름 우선
 - 명시적으로 `$readable-code-style`로 호출 가능
 
+### `write-polished-docs`
+
+문서 초안과 검토 내용을 최종 독자가 읽을 수 있는 문장으로 정리하는 스킬입니다.
+
+- 대화와 검토 흔적 제거
+- 사실, 결정, 근거 중심의 문서 재구성
+- 중복 설명 정리
+- 요구사항, 설계 문서, 회의 메모 등 문서 유형별 구조화
+
 ## 디렉터리 구조
 
 ```text
@@ -32,7 +41,11 @@ Django ORM `QuerySet`의 성능을 개선하되 결과 동일성을 유지해야
     │   ├── SKILL.md
     │   └── agents
     │       └── openai.yaml
-    └── readable-code-style
+    ├── readable-code-style
+    │   ├── SKILL.md
+    │   └── agents
+    │       └── openai.yaml
+    └── write-polished-docs
         ├── SKILL.md
         └── agents
             └── openai.yaml
@@ -46,6 +59,7 @@ Django ORM `QuerySet`의 성능을 개선하되 결과 동일성을 유지해야
 mkdir -p ~/.codex/skills
 cp -R skills/django-orm-query-tuning ~/.codex/skills/
 cp -R skills/readable-code-style ~/.codex/skills/
+cp -R skills/write-polished-docs ~/.codex/skills/
 ```
 
 ## 관리 원칙

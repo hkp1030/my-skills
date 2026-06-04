@@ -1,0 +1,4 @@
+interface:
+  display_name: "Write Polished Docs"
+  short_description: "문서 초안을 최종 문서 문장으로 정리"
+  default_prompt: "Use $write-polished-docs to rewrite this draft into polished, reader-ready documentation without discussion artifacts."
