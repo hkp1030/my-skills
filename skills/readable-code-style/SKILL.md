@@ -1,6 +1,6 @@
 ---
 name: readable-code-style
-description: 코드 가독성을 높이기 위한 단순화와 정리에 사용한다. 복잡한 분기, 과도한 구조화, 불필요한 방어 코드를 줄이고 한눈에 읽히는 형태로 코드를 다듬을 때 사용한다. 명시적으로 `$readable-code-style`을 호출해 적용한다.
+description: 코드 가독성을 높이기 위한 단순화와 정리에 사용한다. 복잡한 분기, 과도한 구조화, 불필요한 방어 코드를 줄이고 한눈에 읽히는 형태로 코드를 다듬을 때 사용한다. 명시적으로 `$readable-code-style`(Codex) 또는 `/readable-code-style`(Claude Code)로 호출할 때만 적용한다.
 ---
 
 # Readable Code Style
