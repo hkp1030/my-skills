@@ -22,6 +22,15 @@ Django ORM `QuerySet`의 성능을 개선하되 결과 동일성을 유지해야
 - 직접적이고 읽기 쉬운 흐름 우선
 - 명시적으로 `$readable-code-style`(Codex) 또는 `/readable-code-style`(Claude Code)로 호출
 
+### `write-focused-tests`
+
+테스트 대상 모듈의 범위 안에서 꼭 필요한 테스트만 작성하기 위한 원칙 스킬입니다.
+
+- 대상 모듈의 책임 범위 안에서만 검증
+- 라이브러리·프레임워크 동작을 다시 확인하는 테스트 제외
+- 기존 테스트와 중복되는 테스트 추가 방지
+- 구현 세부가 아닌 관찰 가능한 동작 검증
+
 ### `write-polished-docs`
 
 문서 초안과 검토 내용을 최종 독자가 읽을 수 있는 문장으로 정리하는 스킬입니다.
@@ -45,6 +54,10 @@ Django ORM `QuerySet`의 성능을 개선하되 결과 동일성을 유지해야
     │   ├── SKILL.md
     │   └── agents
     │       └── openai.yaml
+    ├── write-focused-tests
+    │   ├── SKILL.md
+    │   └── agents
+    │       └── openai.yaml
     └── write-polished-docs
         ├── SKILL.md
         └── agents
@@ -61,6 +74,7 @@ Django ORM `QuerySet`의 성능을 개선하되 결과 동일성을 유지해야
 mkdir -p ~/.codex/skills
 cp -R skills/django-orm-query-tuning ~/.codex/skills/
 cp -R skills/readable-code-style ~/.codex/skills/
+cp -R skills/write-focused-tests ~/.codex/skills/
 cp -R skills/write-polished-docs ~/.codex/skills/
 ```
 
@@ -70,6 +84,7 @@ cp -R skills/write-polished-docs ~/.codex/skills/
 mkdir -p ~/.claude/skills
 cp -R skills/django-orm-query-tuning ~/.claude/skills/
 cp -R skills/readable-code-style ~/.claude/skills/
+cp -R skills/write-focused-tests ~/.claude/skills/
 cp -R skills/write-polished-docs ~/.claude/skills/
 ```
 

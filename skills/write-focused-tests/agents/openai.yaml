@@ -1,0 +1,4 @@
+interface:
+  display_name: "Write Focused Tests"
+  short_description: "모듈 범위 안에서 중복 없는 테스트 작성"
+  default_prompt: "Use $write-focused-tests to write tests that stay within the module's scope, skip library behavior, and avoid duplicating existing tests."
